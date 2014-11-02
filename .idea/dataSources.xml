@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3156891316">
+    <data-source source="LOCAL" name="Django default" uuid="fbc024ec-0988-4517-a5bb-06046d5ebf54">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/db_psyana</jdbc-url>
+      <user-name>dev</user-name>
+      <user-password>dfcedfcfdfdc</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
