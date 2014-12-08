@@ -1,235 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b524371-d59f-41cf-9d8d-9f9a486ca0c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/best.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/best.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/d1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/d1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/d2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/d2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/d3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/d3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/d4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/d4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/feed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/inject.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/lock1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/lock1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/login1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/login1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/marker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/marker02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/marker020.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker020.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/marker1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/nav-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/mobile/slider3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/timer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/tool.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/images/smartphone/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/mobile/responsiveslides.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/parseJSON.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/ajax/xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes/classes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes/prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/attributes/val.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/core/access.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/core/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/core/parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/core/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/defaultDisplay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/css/swap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/data/Data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/data/accepts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/effects/Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/event.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/event/alias.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/event/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/exports/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/exports/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/intro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/manipulation/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/offset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/queue/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/data/empty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/data/mixed_sort.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/data/testinit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/unit/extending.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/unit/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/unit/utilities.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/views/profile/cv.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/media/jquery/src/sizzle/test/jquery.js" afterPath="$PROJECT_DIR$/Public/media/jquery/jquery-1.11.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/about.html" afterPath="$PROJECT_DIR$/Public/views/mobile/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/contact.html" afterPath="$PROJECT_DIR$/Public/views/mobile/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/css/style.css" afterPath="$PROJECT_DIR$/Public/css/mobile/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/Thumbs.db" afterPath="$PROJECT_DIR$/Public/images/mobile/Thumbs.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/best.png" afterPath="$PROJECT_DIR$/Public/images/web/best.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/d1.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/d2.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/d3.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/d4.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/facebook.png" afterPath="$PROJECT_DIR$/Public/images/mobile/facebook.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/feed.png" afterPath="$PROJECT_DIR$/Public/images/mobile/feed.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/inject.png" afterPath="$PROJECT_DIR$/Public/images/mobile/inject.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/lock.png" afterPath="$PROJECT_DIR$/Public/images/web/lock.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/lock1.png" afterPath="$PROJECT_DIR$/Public/images/web/lock1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/login.png" afterPath="$PROJECT_DIR$/Public/images/web/login.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/login1.png" afterPath="$PROJECT_DIR$/Public/images/web/login1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/logo.png" afterPath="$PROJECT_DIR$/Public/images/mobile/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/marker.png" afterPath="$PROJECT_DIR$/Public/images/web/marker.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/marker02.png" afterPath="$PROJECT_DIR$/Public/images/web/marker02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/marker020.png" afterPath="$PROJECT_DIR$/Public/images/web/marker020.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/marker1.png" afterPath="$PROJECT_DIR$/Public/images/web/marker1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/nav-icon.png" afterPath="$PROJECT_DIR$/Public/images/mobile/nav-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/phone.png" afterPath="$PROJECT_DIR$/Public/images/web/phone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider1.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider2.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider2.png" afterPath="$PROJECT_DIR$/Public/images/web/slider2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider21.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider3.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/slider3.png" afterPath="$PROJECT_DIR$/Public/images/web/slider3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/timer.png" afterPath="$PROJECT_DIR$/Public/images/mobile/timer.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/tool.png" afterPath="$PROJECT_DIR$/Public/images/mobile/tool.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/images/twitter.png" afterPath="$PROJECT_DIR$/Public/images/mobile/twitter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/index.html" afterPath="$PROJECT_DIR$/Public/views/mobile/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/news.html" afterPath="$PROJECT_DIR$/Public/views/mobile/news.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/mobile/services.html" afterPath="$PROJECT_DIR$/Public/views/mobile/services.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/about.html" afterPath="$PROJECT_DIR$/Public/views/smartphone/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/contact.html" afterPath="$PROJECT_DIR$/Public/views/smartphone/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/css/responsiveslides.css" afterPath="$PROJECT_DIR$/Public/css/smartphone/responsiveslides.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/css/style.css" afterPath="$PROJECT_DIR$/Public/css/smartphone/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/Thumbs.db" afterPath="$PROJECT_DIR$/Public/images/smartphone/Thumbs.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/best.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/best.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/d1.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/d1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/d2.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/d2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/d3.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/d3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/d4.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/d4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/facebook.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/facebook.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/feed.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/feed.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/inject.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/inject.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/lock.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/lock.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/lock1.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/lock1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/login.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/login.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/login1.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/login1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/logo.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/marker.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/marker02.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/marker020.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker020.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/marker1.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/marker1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/nav-icon.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/nav-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/phone.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/phone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider1.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider2.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider2.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider21.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider3.jpg" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/slider3.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/slider3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/timer.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/timer.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/tool.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/tool.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/images/twitter.png" afterPath="$PROJECT_DIR$/Public/images/smartphone/twitter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/index.html" afterPath="$PROJECT_DIR$/Public/views/smartphone/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/js/mobile.js" afterPath="$PROJECT_DIR$/Public/js/mobile/mobile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/js/responsiveslides.min.js" afterPath="$PROJECT_DIR$/Public/js/web/responsiveslides.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/news.html" afterPath="$PROJECT_DIR$/Public/views/smartphone/news.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/smartphone/services.html" afterPath="$PROJECT_DIR$/Public/views/smartphone/services.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/about.html" afterPath="$PROJECT_DIR$/Public/views/web/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/contact.html" afterPath="$PROJECT_DIR$/Public/views/web/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/css/responsiveslides.css" afterPath="$PROJECT_DIR$/Public/css/web/responsiveslides.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/css/style.css" afterPath="$PROJECT_DIR$/Public/css/web/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/Thumbs.db" afterPath="$PROJECT_DIR$/Public/images/web/Thumbs.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/best.png" afterPath="$PROJECT_DIR$/Public/images/web/best.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/d1.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/d2.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/d3.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/d4.jpg" afterPath="$PROJECT_DIR$/Public/images/web/d4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/facebook.png" afterPath="$PROJECT_DIR$/Public/images/web/facebook.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/feed.png" afterPath="$PROJECT_DIR$/Public/images/web/feed.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/inject.png" afterPath="$PROJECT_DIR$/Public/images/web/inject.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/lock.png" afterPath="$PROJECT_DIR$/Public/images/web/lock.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/lock1.png" afterPath="$PROJECT_DIR$/Public/images/web/lock1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/login.png" afterPath="$PROJECT_DIR$/Public/images/web/login.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/login1.png" afterPath="$PROJECT_DIR$/Public/images/web/login1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/logo.png" afterPath="$PROJECT_DIR$/Public/images/web/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/marker.png" afterPath="$PROJECT_DIR$/Public/images/web/marker.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/marker02.png" afterPath="$PROJECT_DIR$/Public/images/web/marker02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/marker020.png" afterPath="$PROJECT_DIR$/Public/images/web/marker020.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/marker1.png" afterPath="$PROJECT_DIR$/Public/images/web/marker1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/phone.png" afterPath="$PROJECT_DIR$/Public/images/web/phone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider1.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider2.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider2.png" afterPath="$PROJECT_DIR$/Public/images/web/slider2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider21.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider3.jpg" afterPath="$PROJECT_DIR$/Public/images/web/slider3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/slider3.png" afterPath="$PROJECT_DIR$/Public/images/web/slider3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/timer.png" afterPath="$PROJECT_DIR$/Public/images/web/timer.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/tool.png" afterPath="$PROJECT_DIR$/Public/images/web/tool.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/images/twitter.png" afterPath="$PROJECT_DIR$/Public/images/web/twitter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/index.html" afterPath="$PROJECT_DIR$/Public/views/web/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/js/responsiveslides.min.js" afterPath="$PROJECT_DIR$/Public/js/web/responsiveslides.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/news.html" afterPath="$PROJECT_DIR$/Public/views/web/news.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Public/web/services.html" afterPath="$PROJECT_DIR$/Public/views/web/services.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PsyAna.iml" afterPath="$PROJECT_DIR$/.idea/PsyAna.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PsyAna/settings.py" afterPath="$PROJECT_DIR$/PsyAna/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/curriculum/views.py" afterPath="$PROJECT_DIR$/curriculum/views.py" />
+    <list default="true" id="7b524371-d59f-41cf-9d8d-9f9a486ca0c1" name="Default" comment="Settle down an project structure&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/web/about.html" afterPath="$PROJECT_DIR$/Public/views/web/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/web/contact.html" afterPath="$PROJECT_DIR$/Public/views/web/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/home.html" afterPath="$PROJECT_DIR$/Public/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/web/index.html" afterPath="$PROJECT_DIR$/Public/views/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/web/news.html" afterPath="$PROJECT_DIR$/Public/views/web/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/views/web/services.html" afterPath="$PROJECT_DIR$/Public/views/web/services.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PsyAna.iws" />
@@ -259,53 +37,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/curriculum/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="176">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/views/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="304" max-vertical-offset="4240">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-1.11.1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/media/jquery/jquery-1.11.1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165024">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.375" vertical-offset="2119" max-vertical-offset="4240">
+              <caret line="142" column="87" selection-start-line="142" selection-start-column="87" selection-end-line="142" selection-end-column="87" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PsyAna/settings.py">
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/views/web/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1632">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.375" vertical-offset="503" max-vertical-offset="3312">
+              <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PsyAna/urls.py">
+      <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/views/web/services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="240">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state vertical-scroll-proportion="-12.208333" vertical-offset="2667" max-vertical-offset="4256">
+              <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/bootstrap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.7083335" vertical-offset="527" max-vertical-offset="2208">
+              <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#p#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compiler.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/compiler.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.375" vertical-offset="1655" max-vertical-offset="4800">
+              <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -314,28 +96,52 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5253078" vertical-offset="0" max-vertical-offset="731">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45964432" vertical-offset="0" max-vertical-offset="731">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/app/app.js">
+      <file leaf-file-name="concepts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/concepts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="544">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state vertical-scroll-proportion="-6.375" vertical-offset="3799" max-vertical-offset="5488">
+              <caret line="247" column="114" selection-start-line="247" selection-start-column="114" selection-end-line="247" selection-end-column="114" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#p#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#p#20;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#p#24;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/views/mobile/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.958333" vertical-offset="305" max-vertical-offset="2880">
+              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsiveslides.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/js/web/responsiveslides.min.js">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/views/web/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="208">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.958333" vertical-offset="2113" max-vertical-offset="3552">
+              <caret line="147" column="80" selection-start-line="147" selection-start-column="80" selection-end-line="147" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/views/web/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.375" vertical-offset="503" max-vertical-offset="2944">
+              <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -356,7 +162,12 @@
       <list>
         <option value="$PROJECT_DIR$/curriculum/views.py" />
         <option value="$PROJECT_DIR$/PsyAna/settings.py" />
+        <option value="$PROJECT_DIR$/Public/views/home.html" />
+        <option value="$PROJECT_DIR$/Public/views/web/services.html" />
+        <option value="$PROJECT_DIR$/Public/views/web/contact.html" />
         <option value="$PROJECT_DIR$/Public/views/web/index.html" />
+        <option value="$PROJECT_DIR$/Public/views/web/news.html" />
+        <option value="$PROJECT_DIR$/Public/views/web/about.html" />
       </list>
     </option>
   </component>
@@ -505,76 +316,6 @@
               <option name="myItemId" value="Public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="underscore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -706,20 +447,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PsyAna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="PsyAna" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -732,7 +459,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1001,6 +728,13 @@
       <option name="number" value="Default" />
       <updated>1414938651589</updated>
     </task>
+    <task id="LOCAL-00001" summary="Settle down an project structure&#10;">
+      <created>1418081115513</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1418081115513</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1008,15 +742,17 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.213125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.213125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1024,7 +760,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1044,34 +779,14 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Settle down an project structure&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Settle down an project structure&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/curriculum/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="224">
-          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="192">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/curriculum/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="176">
@@ -1084,7 +799,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,14 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/views/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="304" max-vertical-offset="4240">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PsyAna/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1632">
@@ -1384,10 +1095,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.0" vertical-offset="672" max-vertical-offset="2752">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/components/google-code-prettify-1.0.1/src/prettify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="21935" max-vertical-offset="25104">
+          <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/bootstrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7083335" vertical-offset="527" max-vertical-offset="2208">
+          <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#p#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/compiler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375" vertical-offset="1655" max-vertical-offset="4800">
+          <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/media/angular-1.3.1/docs/partials/guide/concepts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375" vertical-offset="3799" max-vertical-offset="5488">
+          <caret line="247" column="114" selection-start-line="247" selection-start-column="114" selection-end-line="247" selection-end-column="114" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#20;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#24;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/mobile/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.958333" vertical-offset="305" max-vertical-offset="2880">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/web/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.958333" vertical-offset="2113" max-vertical-offset="3552">
+          <caret line="147" column="80" selection-start-line="147" selection-start-column="80" selection-end-line="147" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/web/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375" vertical-offset="503" max-vertical-offset="2944">
+          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375" vertical-offset="2119" max-vertical-offset="4240">
+          <caret line="142" column="87" selection-start-line="142" selection-start-column="87" selection-end-line="142" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/web/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375" vertical-offset="503" max-vertical-offset="3312">
+          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/views/web/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.208333" vertical-offset="2667" max-vertical-offset="4256">
+          <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Public/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5253078" vertical-offset="0" max-vertical-offset="731">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45964432" vertical-offset="0" max-vertical-offset="731">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
