@@ -27,7 +27,7 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+    # Application definition
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'curriculum'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,10 +82,16 @@ USE_L10N = True
 USE_TZ = True
 
 
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'Public/views'),
+)
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = 'Public/'
-MEDIA_URL = 'Public/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
-MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+STATIC_ROOT = os.path.join(BASE_DIR, 'Public/')
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
