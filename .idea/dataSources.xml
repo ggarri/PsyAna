@@ -5,10 +5,7 @@
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/db_psyana</jdbc-url>
-      <user-name>dev</user-name>
-      <user-password>dfcedfcfdfdc</user-password>
       <libraries />
     </data-source>
   </component>
 </project>
-
