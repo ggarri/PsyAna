@@ -4,10 +4,11 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 
+import os
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'curriculum.views.home', name='home'),
-    url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^$', 'content.views.home', name='home'),
+    # url(r'^tinymce/', include('tinymce.urls')),
     url(r'^admin/', include(admin.site.urls)),
-) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+) + static(settings.STATIC_URL)
