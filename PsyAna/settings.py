@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_render_partial',
     'content'
 )
 
@@ -50,8 +51,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'PsyAna.urls'
-
 WSGI_APPLICATION = 'PsyAna.wsgi.application'
+AUTH_USER_MODEL = "content.UserProfile"
 
 
 # Database

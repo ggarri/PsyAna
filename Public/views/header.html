@@ -1,0 +1,50 @@
+{% load staticfiles %}
+
+<div class="top-header">
+    <div class="wrap">
+        <div class="top-header-left">
+            {% if office %}
+                 <p>{{ office.phone }}</p>
+            {% endif %}
+        </div>
+        <div class="right-left">
+            <ul>
+                <li class="login"><a href="#">Login</a></li>
+                <li class="sign"><a href="#">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="clear"> </div>
+    </div>
+</div>
+
+<div class="main-header">
+    <div class="wrap">
+        <div class="logo">
+            <a href="index.html"><img src="{% static 'images/web/logo.png' %}" title="logo" /></a>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#"><img src="{% static 'images/web/facebook.png' %}" title="facebook" /></a></li>
+                <li><a href="#"><img src="{% static 'images/web/twitter.png' %}" title="twitter" /></a></li>
+                <li><a href="#"><img src="{% static 'images/web/feed.png' %}" title="Rss" /></a></li>
+                <div class="clear"> </div>
+            </ul>
+        </div>
+        <div class="clear"> </div>
+    </div>
+</div>
+
+<div class="clear"> </div>
+
+<div class="top-nav">
+    <div class="wrap">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="clear"> </div>
+        </ul>
+    </div>
+</div>

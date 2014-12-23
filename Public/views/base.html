@@ -1,0 +1,42 @@
+<!--
+Author: ggarrido
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{% load staticfiles %}
+		{% include 'css.html' %}
+		{% include 'js.html' %}
+		<title>Psicóloga Ana Hidalgo Bolance | Home</title>
+	</head>
+	<body>
+		<!---start-wrap---->
+		
+		<!---start-header---->
+        <div class="header">
+			{% include 'header.html' %}
+		</div>
+		<!---End-header---->
+
+		<!---start-images-slider---->
+		{% include 'slider.html' %}
+		<!---End-images-slider---->
+
+		<!----start-content----->
+		<div class="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<!----End-content----->
+
+		<!---start-footer---->
+		<div class="footer">
+			{% include "footer.html" %}
+		</div>
+		<!---End-footer---->
+	</body>
+</html>
+
