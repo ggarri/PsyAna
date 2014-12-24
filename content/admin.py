@@ -1,16 +1,10 @@
 from django.contrib import admin
 from django.core.urlresolvers import reverse
-from content.models import UserProfile, Office
+from content.models import Photo
 # from tinymce.widgets import TinyMCE
 
 
-class ProfileAdmin(admin.ModelAdmin):
-    pass
-    # ('Profile description',  {'fields': ['description'], 'widget': TinyMCE})
-
-
-class OfficeeAdmin(admin.ModelAdmin):
+class PhotoAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(UserProfile, ProfileAdmin)
-admin.site.register(Office, OfficeeAdmin)
+admin.site.register(Photo, PhotoAdmin)

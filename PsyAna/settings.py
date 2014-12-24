@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_render_partial',
-    'content'
+    'content',
+    'management'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,7 +53,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'PsyAna.urls'
 WSGI_APPLICATION = 'PsyAna.wsgi.application'
-AUTH_USER_MODEL = "content.UserProfile"
+AUTH_USER_MODEL = "management.UserProfile"
+OFFICE_NAME = 'PsicoGym'
 
 
 # Database
@@ -94,8 +96,7 @@ STATIC_URL = '/Public/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'Public/')
 
 STATICFILES_DIRS = (
-os.path.join(BASE_DIR, 'Public'),
-
+    os.path.join(BASE_DIR, 'Public'),
 )
 
 STATICFILES_FINDERS = (

@@ -1,21 +1,17 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-
-
-class UserProfile(AbstractUser):
-    phone = models.CharField(max_length=20, blank=True)
-    address = models.CharField(max_length=1000, blank=True)
-    birthday = models.DateField(default=None, blank=True, null=True)
-    # description = tinymce_models.HTMLField()
+import os
 
 
 class Photo(models.Model):
-    image = models.ImageField()
+    image = models.ImageField(upload_to='Public/uploading')
+    title = models.CharField(max_length=100, blank=True, default='NO TITLE')
+    alt = models.CharField(max_length=255, blank=True, default='NO ALT')
+    description = models.TextField(null=True)
 
+    # def save(self, *args, **kwargs):
+    #     if self.image[0] != '/':
+    #         os.path.join('/', self.image)
+    #     super(Photo, self).save(*args, **kwargs)
 
-class Office(models.Model):
-    title = models.CharField(max_length=100, default='NO TITLE')
-    phone = models.CharField(max_length=20, blank=True)
-    address = models.CharField(max_length=1000, blank=True)
-    photos = models.ManyToManyField(Photo, blank=True)
-    psicologies = models.ManyToManyField(UserProfile, blank=True)
+    def __unicode__(self):
+        return u'%s' % self.title
