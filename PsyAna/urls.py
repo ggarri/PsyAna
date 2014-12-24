@@ -10,5 +10,9 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', 'content.views.home', name='home'),
     # url(r'^tinymce/', include('tinymce.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls))
 ) + static(settings.STATIC_URL)
+
+sections = ('about', 'news', 'services', 'contact')
+for section in sections:
+    urlpatterns += url(r'^'+section+'$', 'content.views.section', {'sectionId': section}),

@@ -754,6 +754,15 @@ body{
 	width: 29%;
 	padding:1.5%; 
 }
+.span_1_of_1 {
+	width: 99%;
+	padding:1.5%;
+}
+.span_1_of_2 {
+	width: 49%;
+	padding:1.5%;
+}
+
 .span_2_of_3  h3,
 .span_1_of_3  h3 {
 	font-size: 1.5em;
