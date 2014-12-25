@@ -1,28 +1,34 @@
+from django.http.response import HttpResponseNotFound
+from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
+from django.core.urlresolvers import reverse
 from django.template.context import RequestContext
-from management.models import Office, UserProfile
+from management.models import Office
+from content.models import Page
 from django.conf import settings
 
 
 def home(request):
+    page = Page.objects.get(path='/')
+    if page is None:
+        return HttpResponseNotFound('<h1>HomePage not found</h1><h2>Please, insert it via admin area</h2>')
+    return render_page(request)
+    redirect_url = reverse('content.views.render_page')
+    return HttpResponseRedirect(reverse('content.views.render_page'))
+
+
+def render_page(request, page_id='/'):
     device = 'mobile' if request.is_mobile else 'web'
     offices = Office.objects.filter(title=settings.OFFICE_NAME)
     office = offices[0] if len(offices) > 0 else None
+    if office is None:
+        return HttpResponseNotFound('<h1>Office not found</h1><h2>Please, insert it via admin area</h2>')
 
-    return render_to_response(device+'/home.html',
+    page = Page.objects.get(path=page_id)
+    return render_to_response(page.get_html_template(),
                               {
+                                  'menus': Page.objects.values('id', 'path', 'title'),
+                                  'menu_selected': page.id,
                                   'device': device,
-                                  'office': office
-                              }, context_instance=RequestContext(request))
-
-
-def section(request, sectionId):
-    device = 'mobile' if request.is_mobile else 'web'
-    offices = Office.objects.filter(title=settings.OFFICE_NAME)
-    office = offices[0] if len(offices) > 0 else None
-
-    return render_to_response(device+'/'+sectionId+'.html',
-                              {
-                                  'device': device,
-                                  'office': office
-                              }, context_instance=RequestContext(request))
+                                  'office': office},
+                              context_instance=RequestContext(request))

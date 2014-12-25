@@ -22,6 +22,13 @@ class Page(models.Model):
     template = models.IntegerField(choices=TEMPLATES, default=1)
     path = models.CharField(max_length=40, blank=False, default='/')
 
+    @staticmethod
+    def convert_template_id(template_id):
+        return [y[1] for x, y in enumerate(Page.TEMPLATES) if y[0] == template_id]
+
+    def get_html_template(self):
+        return Page.convert_template_id(self.template)
+
     def __unicode__(self):
         return u'%s' % self.title
 

@@ -39,11 +39,14 @@
 <div class="top-nav">
     <div class="wrap">
         <ul>
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/contact">Contact</a></li>
+            {% for menu in menus %}
+                <li {% if menu.id == menu_selected %} class="active" {% endif %}><a href="{{ menu.path }}">{{ menu.title }}</a></li>
+            {% endfor %}
+{#            <li class="active"><a href="/">Home</a></li>#}
+{#            <li><a href="/about">About</a></li>#}
+{#            <li><a href="/services">Services</a></li>#}
+{#            <li><a href="/news">News</a></li>#}
+{#            <li><a href="/contact">Contact</a></li>#}
             <div class="clear"> </div>
         </ul>
     </div>
