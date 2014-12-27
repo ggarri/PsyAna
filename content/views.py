@@ -17,6 +17,17 @@ def home(request):
     return HttpResponseRedirect(reverse('content.views.render_page'))
 
 
+def test(request):
+    device = 'mobile' if request.is_mobile else 'web'
+    return render_to_response('web/news.html',
+                              {
+                                  'menus': Page.objects.values('id', 'path', 'title'),
+                                  'device': device,
+                                  'menu_selected': 0
+                              },
+                              context_instance=RequestContext(request))
+
+
 def render_page(request, page_id='/'):
     device = 'mobile' if request.is_mobile else 'web'
     offices = Office.objects.filter(title=settings.OFFICE_NAME)
@@ -25,10 +36,14 @@ def render_page(request, page_id='/'):
         return HttpResponseNotFound('<h1>Office not found</h1><h2>Please, insert it via admin area</h2>')
 
     page = Page.objects.get(path=page_id)
-    return render_to_response(page.get_html_template(),
+    sections = page.sections.all()
+    html_template = page.get_html_template()
+    return render_to_response(html_template,
                               {
                                   'menus': Page.objects.values('id', 'path', 'title'),
                                   'menu_selected': page.id,
+                                  'sections': sections,
                                   'device': device,
-                                  'office': office},
+                                  'office': office
+                              },
                               context_instance=RequestContext(request))

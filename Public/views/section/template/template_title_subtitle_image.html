@@ -1,7 +1,8 @@
-<div class="about-topgrid1">
-    <h3>Who We Are</h3>
-    <img src="/Public/images/web/slider2.jpg" title="name">
-    <h4>LOREM IPM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM.</h4>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p>
+<div class="">
+    <h3>{{ section.title }}</h3>
+    <img src="{{ section.head_photo.image }}" alt="{{ section.head_photo.alt }}" title="{{ section.head_photo.title }}">
+    <h4>{{ section.subtitle }}</h4>
+    {% autoescape off %}
+        <p>{{ section.text }}</p>
+    {% endautoescape %}
 </div>

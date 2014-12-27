@@ -9,6 +9,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'content.views.home', name='home'),
+    url(r'^test$', 'content.views.test', name='test'),
     # url(r'^tinymce/', include('tinymce.urls')),
     url(r'^admin/', include(admin.site.urls))
 ) + static(settings.STATIC_URL)

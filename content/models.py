@@ -6,7 +6,7 @@ class Photo(models.Model):
     image = models.ImageField(upload_to='Public/uploading')
     title = models.CharField(max_length=100, blank=True, default='NO TITLE')
     alt = models.CharField(max_length=255, blank=True, default='NO ALT')
-    description = models.TextField(null=True)
+    description = models.TextField(null=True, blank=True)
 
     def __unicode__(self):
         return u'%s' % self.title
@@ -14,8 +14,8 @@ class Photo(models.Model):
 
 class Page(models.Model):
     TEMPLATES = (
-        (1, 'base/base.html'),
-        (2, 'base/base_slider.html')
+        (1, 'base/base_simple.html'),
+        (2, 'base/base_slider.html'),
     )
 
     title = models.CharField(max_length=40)
@@ -24,7 +24,7 @@ class Page(models.Model):
 
     @staticmethod
     def convert_template_id(template_id):
-        return [y[1] for x, y in enumerate(Page.TEMPLATES) if y[0] == template_id]
+        return [y[1] for x, y in enumerate(Page.TEMPLATES) if y[0] == template_id][0]
 
     def get_html_template(self):
         return Page.convert_template_id(self.template)
@@ -60,6 +60,20 @@ class Section(models.Model):
     subtitle = models.CharField(max_length=200, blank=True, null=True)
     text = models.TextField(blank=True)
     head_photo = models.ForeignKey(Photo, related_name='sections')
+
+    @staticmethod
+    def convert_template_id(template_id):
+        return [y[1] for x, y in enumerate(Section.TEMPLATES) if y[0] == template_id][0]
+
+    def get_html_template(self):
+        return Section.convert_template_id(self.template)
+
+    @staticmethod
+    def convert_skeleton_id(skeleton_id):
+        return [y[1] for x, y in enumerate(Section.SKELETON) if y[0] == skeleton_id][0]
+
+    def get_html_skeleton(self):
+        return Section.convert_skeleton_id(self.skeleton)
 
     def __unicode__(self):
         return u'%s - %s' % (self.page.title, self.title)

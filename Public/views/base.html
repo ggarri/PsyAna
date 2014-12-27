@@ -21,19 +21,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!---End-header---->
 
-		<!---start-images-slider---->
-		{% include 'slider.html' %}
-		<!---End-images-slider---->
+        {% if isSlider %}
+			<!---start-images-slider---->
+			{% include 'slider.html' %}
+			<!---End-images-slider---->
+        {% endif %}
 
 		<!----start-content----->
 		<div class="content">
-			{% block content %}
+        	<div class="wrap">
+                {% block content %}
+                {% for section in sections %}
+					{% include section.get_html_skeleton with section=section only %}
+				{% endfor %}
 			{% endblock %}
+            </div>
+        	<div class="clear"></div>
 		</div>
 		<!----End-content----->
 
 		<!---start-footer---->
-		<div class="footer">
+		<div class="footer navbar navbar-fixed-bottom">
 			{% include "footer.html" %}
 		</div>
 		<!---End-footer---->
