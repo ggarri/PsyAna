@@ -1,10 +1,13 @@
+from django.forms.models import modelformset_factory, BaseInlineFormSet
 from django.http.response import HttpResponseNotFound
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from django.template.context import RequestContext
+from django.views.decorators.csrf import csrf_exempt
+from content.forms import SectionInlineFormSet
 from management.models import Office
-from content.models import Page
+from content.models import Page, Section
 from django.conf import settings
 
 
@@ -13,8 +16,19 @@ def home(request):
     if page is None:
         return HttpResponseNotFound('<h1>HomePage not found</h1><h2>Please, insert it via admin area</h2>')
     return render_page(request)
-    redirect_url = reverse('content.views.render_page')
-    return HttpResponseRedirect(reverse('content.views.render_page'))
+
+@csrf_exempt
+def render_section(request, section_id):
+    if request.is_ajax():
+        section_form_set = modelformset_factory(Section)
+        formset = section_form_set(request.POST)
+        if formset.is_valid():
+            sections = formset.save(commit=False)
+
+    section = sections[0] if len(sections) > 0 else Section.objects.get(pk=section_id)
+    html_template = section.get_html_template()
+    return render_to_response(html_template, {'section': section},
+                              context_instance=RequestContext(request))
 
 
 def test(request):
