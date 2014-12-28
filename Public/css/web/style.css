@@ -752,7 +752,9 @@ body{
 }
 .col:first-child{
 	margin-left:0;
-}	
+}
+
+
 .span_2_of_3 {
 	width: 63.1%;
 	padding:1.5%; 
@@ -764,6 +766,21 @@ body{
 .span_1_of_1 {
 	width: 99%;
 	padding:1.5%;
+	text-align: center;
+}
+.span_1_of_1 img{
+	max-height: 60em;
+}
+.span_1_of_2 img{
+	max-height: 40em;
+	margin-left: 2em;
+}
+.span_1_of_3 img{
+	max-height: 30em;
+}
+.span_2_of_3 img{
+	max-height: 50em;
+	margin-left: 8em;
 }
 .span_1_of_2 {
 	width: 49%;
