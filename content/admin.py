@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.admin.templatetags.admin_urls import add_preserved_filters
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
-from content.forms import SectionInlineFormSet
+from content.forms import SectionInlineFormSet, PageFormSet
 from content.models import Photo, Page, Section
 
 
@@ -27,6 +27,7 @@ class SectionInline(admin.StackedInline):
 
 class PageAdmin(admin.ModelAdmin):
     change_form_template = 'admin/change_form_page.html'
+    formset = PageFormSet
     preview__template = 'admin/preview__section.html'
     inlines = [
         SectionInline,

@@ -2,46 +2,46 @@
 
 <script type="text/javascript">
 (function($) {
-    var updateSectionPreview = function(form) {
-        var key = $(form).attr('id').replace('sections-', '');
-        var sectionId = $('#id_sections-'+key+'-id').val();
-        var extraDataInput = [
-            'id_sections-'+key+'-template',
-            'id_sections-'+key+'-skeleton',
-            'id_sections-'+key+'-title',
-            'id_sections-'+key+'-subtitle',
-            'id_sections-'+key+'-text',
-            'id_sections-'+key+'-head_photo',
-            'id_sections-'+key+'-id',
-            'id_sections-'+key+'-page',
-{#            'id_sections-TOTAL_FORMS',#}
-{#            'id_sections-INITIAL_FORMS',#}
-{#            'id_sections-MIN_NUM_FORMS',#}
-{#            'id_sections-MAX_NUM_FORMS'#}
-        ]
-        var sectionData = {}
-
-        $.each(extraDataInput, function(key2, item){
-            var name = $('#'+item).attr('name');
-            name = name.replace('sections-'+key, 'sections-0');
-            name = name.replace('sections', 'form');
-            sectionData[name] = $('#'+item).val();
+    var updateSectionPreview = function(sectionDiv) {
+        var baseClass = $(sectionDiv).attr('id');
+        var sectionPos = parseInt(baseClass.replace('sections-', ''));
+        var sectionId = $('#id_'+baseClass+'-id').val();
+        if(!sectionId) {
+            sectionId = 0
+        }
+        var fields = ['template', 'skeleton', 'title', 'subtitle', 'head_photo', 'id', 'page', 'text']
+        var requestData = {};
+        $.each(fields, function(key, value){
+            var $field = $('#id_'+baseClass+'-'+value);
+            var fieldName = $field.attr('name').replace(baseClass, 'form-0');
+            var fieldValue = $field.val();
+            if(fieldValue)
+                requestData[fieldName] = fieldValue;
         });
+        requestData['form-TOTAL_FORMS'] = 1;
+        requestData['form-INITIAL_FORMS'] = 1;
 
-        sectionData['form-TOTAL_FORMS'] = 1;
-        sectionData['form-INITIAL_FORMS'] = 1;
 
         $.ajax({
             type: "POST",
             url: '/render/section/' + sectionId,
-            data: sectionData
+            data: requestData
         }).done(function(response) {
-            $('.section_preview', $(form)).contents().find('html').html(response);
+            $('.section_preview', $(sectionDiv)).contents().find('html').html(response);
+        });
+    };
+
+    var updatePagePreview = function() {
+        $.ajax({
+            type: "POST",
+            url: '/render/page/' + 1,
+            data: $('#page_form').serialize().replace(/sections/g, 'form')
+        }).done(function(response) {
+            $('#page_form iframe:first').contents().find('html').html(response);
         });
     };
 
     var $fieldset = $('fieldset', $('.dynamic-sections'));
-
     $fieldset.css({
         'width': '60%',
         'display': 'inline-block'
@@ -56,9 +56,13 @@
 
     $.each($('.dynamic-sections'), function (section, container) {
         $('input, select, textarea' ,$('fieldset')).unbind('change').bind('change', function(e){
-            updateSectionPreview($(e.target).closest('.dynamic-sections'));
+            var sectionDiv = $(e.target).closest('.dynamic-sections');
+{#            updatePagePreview();#}
+            if(sectionDiv)
+                updateSectionPreview(sectionDiv);
         });
         updateSectionPreview(container);
+{#        updatePagePreview();#}
     });
 
 })(django.jQuery);

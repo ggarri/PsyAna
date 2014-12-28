@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Preview</title>
+    {% include 'css.html' %}
+</head>
+<body>
+
+<div class="content">
+    <div class="col span_1_of_1">
+        {% include section.get_html_template with section=section only %}
+    </div>
+</div>
+
+</body>
+</html>
+
+

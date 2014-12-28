@@ -758,7 +758,7 @@ body{
 	padding:1.5%; 
 }
 .span_1_of_3 {
-	width: 29%;
+	width: 32%;
 	padding:1.5%; 
 }
 .span_1_of_1 {
@@ -870,14 +870,14 @@ body{
 		width:95%;
 	}
 	.span_2_of_3 {
-		width:94%;
+		width:29%;
 		padding:3%; 
 	}
 	.col{ 
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
-		width:94%;
+		width:29%;
 		padding:3%; 
 	}
 }
@@ -889,14 +889,14 @@ body{
 		width:95%;
 	}
 	.span_2_of_3 {
-		width:94%;
+		width:32%;
 		padding:3%; 
 	}
 	.col{ 
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
-		width:94%;
+		width:32%;
 		padding:3%; 
 	}
    
@@ -918,7 +918,7 @@ body{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
-		width:90%;
+		width:32%;
 		padding:5%; 
 	}
 	.contact-form input[type="text"],.contact-form textarea{

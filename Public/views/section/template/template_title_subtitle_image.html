@@ -1,6 +1,6 @@
 <div class="">
     <h3>{{ section.title }}</h3>
-    <img src="{{ section.head_photo.image }}" alt="{{ section.head_photo.alt }}" title="{{ section.head_photo.title }}">
+    <img src="/{{ section.head_photo.image }}" alt="{{ section.head_photo.alt }}" title="{{ section.head_photo.title }}">
     <h4>{{ section.subtitle }}</h4>
     {% autoescape off %}
         <p>{{ section.text }}</p>
