@@ -54,7 +54,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'PsyAna.urls'
 WSGI_APPLICATION = 'PsyAna.wsgi.application'
 AUTH_USER_MODEL = "management.UserProfile"
-OFFICE_NAME = 'PsicoGym'
+WEBSITE_NAME = 'PsyAna'
 
 
 # Database

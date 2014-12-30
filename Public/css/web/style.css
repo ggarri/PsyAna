@@ -757,11 +757,11 @@ body{
 
 .span_2_of_3 {
 	width: 63.1%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_3 {
 	width: 32%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_1 {
 	width: 99%;
@@ -905,6 +905,9 @@ body{
 	.wrap{
 		width:95%;
 	}
+	.span_1_of_1 {
+		text-align: left;
+	}
 	.span_2_of_3 {
 		width:32%;
 		padding:3%; 
@@ -926,6 +929,9 @@ body{
 @media only screen and (max-width: 480px) {
 	.wrap{
 		width:95%;
+	}
+	.span_1_of_1 {
+		text-align: left;
 	}
 	.span_2_of_3 {
 		width:90%;

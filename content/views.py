@@ -8,7 +8,7 @@ from django.template.context import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from content.forms import SectionInlineFormSet, PageFormSet
 from management.models import Office
-from content.models import Page, Section
+from content.models import Page, Section, Website
 from django.conf import settings
 
 
@@ -62,20 +62,20 @@ def test(request):
 
 
 def render_page(request, page_id='/'):
-    device = 'mobile' if request.is_mobile else 'web'
-    offices = Office.objects.filter(title=settings.OFFICE_NAME)
-    office = offices[0] if len(offices) > 0 else None
-    if office is None:
-        return HttpResponseNotFound('<h1>Office not found</h1><h2>Please, insert it via admin area</h2>')
+    try:
+        website = Website.objects.get(name=settings.WEBSITE_NAME)
+    except Website.DoesNotExist:
+        return HttpResponseNotFound('<h1>Website not found</h1><h2>Please, insert it via admin area</h2>')
 
-    page = Page.objects.get(path=page_id)
-    sections = page.sections.all()
-    html_template = page.get_html_template()
-    return render_to_response(html_template,
+    device = 'mobile' if request.is_mobile else 'web'
+    office = website.office
+    pages = Page.objects.filter(website__pk=website.pk).all()
+    page = Page.objects.get(website__pk=website.pk, path=page_id)
+    return render_to_response(page.get_html_template(),
                               {
-                                  'menus': Page.objects.values('id', 'path', 'title'),
-                                  'menu_selected': page.id,
-                                  'sections': sections,
+                                  'website': website,
+                                  'menus': pages.values('id', 'path', 'title'),
+                                  'page': page,
                                   'device': device,
                                   'office': office
                               },

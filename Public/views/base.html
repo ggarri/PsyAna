@@ -10,7 +10,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		{% load staticfiles %}
 		{% include 'css.html' %}
 		{% include 'js.html' %}
-		<title>Psicóloga Ana Hidalgo Bolance | Home</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Gabriel Garrido">
+        <meta name="keywords" content="{{    website.keywords.all | join:", " }} {{    page.keywords.all | join:", " }}">
+		<meta name="description" content="{{ website.description }}. {{ page.description }}" >
+        <meta name="robots" content="{{ page.robot_tags }}">
+		<title>{{ website.title }} | {{ page.title }}</title>
 	</head>
 	<body>
 		<!---start-wrap---->
@@ -31,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="content">
         	<div class="wrap">
 			{% block content %}
-                {% for section in sections %}
+                {% for section in page.sections.all %}
 					{% include section.get_html_skeleton with section=section only %}
 				{% endfor %}
 			{% endblock %}

@@ -1,11 +1,37 @@
 from django.db import models
-import os
+from management.models import Office
+
+
+class Keyword(models.Model):
+    name = models.CharField(max_length=20)
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+    class Meta:
+        unique_together = ( ('name'), )
+
+
+class Website(models.Model):
+    name = models.CharField(max_length=100, blank=False)
+    url = models.CharField(max_length=250)
+    office = models.ForeignKey(Office)
+    title = models.CharField(max_length=70, blank=False)
+    description = models.TextField(null=True, blank=True)
+    # Max 20 Keywords under
+    keywords = models.ManyToManyField(Keyword, blank=True)
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+    class Meta:
+        unique_together = ( ('name'), )
 
 
 class Photo(models.Model):
     image = models.ImageField(upload_to='Public/uploading')
-    title = models.CharField(max_length=100, blank=True, default='NO TITLE')
-    alt = models.CharField(max_length=255, blank=True, default='NO ALT')
+    title = models.CharField(max_length=70, blank=True, default='NO TITLE')
+    alt = models.CharField(max_length=110, blank=True, default='NO ALT')
     description = models.TextField(null=True, blank=True)
 
     def __unicode__(self):
@@ -18,9 +44,20 @@ class Page(models.Model):
         (2, 'base/base_slider.html'),
     )
 
-    title = models.CharField(max_length=40)
+    ROBOT_TAGS = (
+        ('noindex, follow', 'NOINDEX, FOLLOW'),
+        ('index, nofollow', 'INDEX, NOFOLLOW'),
+        ('noindex, nofollow', 'NOINDEX, NOFOLLOW'),
+        ('index, follow', 'INDEX, FOLLOW')
+    )
+
+    title = models.CharField(max_length=70)
     template = models.IntegerField(choices=TEMPLATES, default=1)
-    path = models.CharField(max_length=40, blank=False, default='/')
+    path = models.CharField(max_length=70, blank=False, default='/')
+    keywords = models.ManyToManyField(Keyword, blank=True)
+    description = models.TextField(null=True, blank=True)
+    robot_tags = models.CharField(max_length=30, choices=ROBOT_TAGS, default='INDEX, FOLLOW')
+    website = models.ForeignKey(Website, related_name='pages', null=True)
 
     @staticmethod
     def convert_template_id(template_id):
@@ -56,8 +93,8 @@ class Section(models.Model):
     page = models.ForeignKey(Page, related_name='sections')
     template = models.IntegerField(choices=TEMPLATES, default=1)
     skeleton = models.IntegerField(choices=SKELETON, default=1)
-    title = models.CharField(max_length=100, blank=True)
-    subtitle = models.CharField(max_length=200, blank=True, null=True)
+    title = models.CharField(max_length=70, blank=True)
+    subtitle = models.CharField(max_length=120, blank=True, null=True)
     text = models.TextField(blank=True)
     head_photo = models.ForeignKey(Photo, related_name='sections')
 
