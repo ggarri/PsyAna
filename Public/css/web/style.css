@@ -754,7 +754,6 @@ body{
 	margin-left:0;
 }
 
-
 .span_2_of_3 {
 	width: 63.1%;
 	padding:1.5%;
@@ -1026,4 +1025,11 @@ body{
 	.top-nav li a {
 		padding: 1em 2.4em;
 	}
+}
+
+#map-canvas {
+	width: 100%;
+	min-height: 200px;
+	margin: 0px;
+	padding: 0px
 }
