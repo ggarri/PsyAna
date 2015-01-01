@@ -1,5 +1,45 @@
 from django.db import models
+from django.utils.encoding import filepath_to_uri
 from management.models import Office
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
+import os
+
+
+class MyStorage(FileSystemStorage):
+
+        def url(self, name):
+            if self.base_url is None:
+                raise ValueError("This file is not accessible via a URL.")
+            return os.path.join(self.base_url, filepath_to_uri(name))
+
+fs = MyStorage(location=settings.CUSTOM_STORAGE_FOLDER_ROOT, base_url=settings.CUSTOM_STORAGE_FOLDER)
+
+
+class Photo(models.Model):
+    image = models.ImageField(storage=fs)
+    title = models.CharField(max_length=70, blank=False)
+    alt = models.CharField(max_length=110, blank=True, null=True)
+    description = models.TextField(null=True, blank=True)
+
+    def delete(self, *args, **kwargs):
+        self.image.delete()
+        super(Photo, self).delete(*args, **kwargs)
+
+    def save(self, *args, **kwargs):
+        if self.pk is not None:
+            try:
+                this = Photo.objects.get(id=self.id)
+                if this.image != self.image:
+                    this.image.delete(save=False)
+            except OSError as e:
+                # when new photo then we do nothing, normal case
+                pass
+
+        super(Photo, self).save(*args, **kwargs)
+
+    def __unicode__(self):
+        return u'%s' % self.title
 
 
 class Keyword(models.Model):
@@ -28,16 +68,6 @@ class Website(models.Model):
         unique_together = ( ('name'), )
 
 
-class Photo(models.Model):
-    image = models.ImageField(upload_to='Public/uploading')
-    title = models.CharField(max_length=70, blank=True, default='NO TITLE')
-    alt = models.CharField(max_length=110, blank=True, default='NO ALT')
-    description = models.TextField(null=True, blank=True)
-
-    def __unicode__(self):
-        return u'%s' % self.title
-
-
 class Page(models.Model):
     TEMPLATES = (
         (1, 'base/base_simple.html'),
@@ -56,6 +86,7 @@ class Page(models.Model):
     path = models.CharField(max_length=70, blank=False, default='/')
     keywords = models.ManyToManyField(Keyword, blank=True)
     description = models.TextField(null=True, blank=True)
+    css_class = models.CharField(max_length=100, blank=True, null=True)
     robot_tags = models.CharField(max_length=30, choices=ROBOT_TAGS, default='INDEX, FOLLOW')
     website = models.ForeignKey(Website, related_name='pages', null=True)
 
@@ -97,7 +128,8 @@ class Section(models.Model):
     title = models.CharField(max_length=70, blank=True)
     subtitle = models.CharField(max_length=120, blank=True, null=True)
     text = models.TextField(blank=True)
-    head_photo = models.ForeignKey(Photo, related_name='sections')
+    head_photo = models.ForeignKey(Photo, related_name='sections', blank=True, null=True)
+    css_class = models.CharField(max_length=100, blank=True, null=True)
 
     @staticmethod
     def convert_template_id(template_id):

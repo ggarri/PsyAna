@@ -55,7 +55,8 @@ ROOT_URLCONF = 'PsyAna.urls'
 WSGI_APPLICATION = 'PsyAna.wsgi.application'
 AUTH_USER_MODEL = "management.UserProfile"
 WEBSITE_NAME = 'PsyAna'
-
+CUSTOM_STORAGE_FOLDER = '/Public/uploading'
+CUSTOM_STORAGE_FOLDER_ROOT = os.path.join(BASE_DIR, 'Public/uploading')
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

@@ -1027,9 +1027,9 @@ body{
 	}
 }
 
-#map-canvas {
+.contact #map-canvas {
 	width: 100%;
-	min-height: 200px;
+	min-height: 300px;
 	margin: 0px;
 	padding: 0px
 }

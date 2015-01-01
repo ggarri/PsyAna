@@ -24,6 +24,7 @@ class KeywordAdmin(admin.ModelAdmin):
 
 
 class PhotoAdmin(admin.ModelAdmin):
+    change_form_template = 'admin/model_admin_photo.html'
     pass
 
 
@@ -45,9 +46,8 @@ class SectionInline(admin.StackedInline):
 
 
 class PageAdmin(admin.ModelAdmin):
-    change_form_template = 'admin/change_form_page.html'
+    change_form_template = 'admin/model_admin_page.html'
     formset = PageFormSet
-    preview__template = 'admin/preview__section.html'
     inlines = [
         KeywordPageInline,
         SectionInline,

@@ -5,7 +5,7 @@
     {% if office %}
         {% for photo in office.photos.all %}
         <li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; -webkit-transition: opacity 600ms ease-in-out; transition: opacity 600ms ease-in-out;">
-            <img src="/{{ photo.image }}" alt="{{ photo.alt }}">
+            <img src="{{ photo.image.url }}" alt="{{ photo.alt }}">
             <div class="slider-info">
                 <p>{{ photo.title }}</p>
                 <span>{{ photo.description }} </span>
