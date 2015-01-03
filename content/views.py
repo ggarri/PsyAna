@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from content.models import Page, Section, Website
 from django.conf import settings
 import subprocess
+import commands
 
 
 def home(request):
@@ -55,14 +56,7 @@ def server_action(request):
                 destination.write(chunk)
 
     def run_command(exec_line):
-        p = subprocess.check_output(exec_line, stderr=subprocess.STDOUT, shell=True)
-        while True:
-            # Returns None while subprocess is running
-            retcode = p.poll()
-            line = p.stdout.readline()
-            yield line
-            if retcode is not None:
-                break
+        return commands.getoutput(exec_line)
 
     if not request.user.is_authenticated():
         return redirect('/admin/login/?next=%s' % request.path)
@@ -72,20 +66,21 @@ def server_action(request):
     action = request.POST['action']
 
     if action == 'git_pull':
-        cmd = 'cd %s && git pull' % settings.BASE_DIR
-        output = run_command(cmd)
+        cmd = 'cd %s && git pull origin dev' % settings.BASE_DIR
     elif action == 'restart_nginx':
-        pass
+        cmd = 'service nginx restart'
     elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:
         handle_uploaded_file(request.FILES['sql_dump_file'])
         database_params = settings.DATABASES['default']
-        cmd = 'mysql -u%s -p%s %s < %s' % (database_params['USER'], database_params['PASSWORD'],
+        cmd = 'mysql -u%s -p%s %s2 < %s' % (database_params['USER'], database_params['PASSWORD'],
                                            database_params['NAME'], settings.PENDING_PSYANA_DUMPFILE)
     else:
         return HttpResponse(content='Action selected not valid', status=403)
 
-    # output = runcommand(cmd)
-    return HttpResponse(cmd)
+    output = run_command(cmd)
+    if not output:
+        output = 'Succesed'
+    return HttpResponse(output)
 
 
 def test(request):
