@@ -57,6 +57,7 @@ AUTH_USER_MODEL = "management.UserProfile"
 WEBSITE_NAME = 'PsyAna'
 CUSTOM_STORAGE_FOLDER = '/Public/uploading'
 CUSTOM_STORAGE_FOLDER_ROOT = os.path.join(BASE_DIR, 'Public/uploading')
+PENDING_PSYANA_DUMPFILE = CUSTOM_STORAGE_FOLDER_ROOT + '/psyana_dump.sql'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

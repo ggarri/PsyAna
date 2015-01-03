@@ -1,1 +1,21 @@
-{% include "base.html" with isSlider='1' %}
+{% extends "base/base_simple.html"%}
+
+{% block extrahead %}
+    {{ block.super }}
+    {% load staticfiles %}
+    <script src="{% static 'js/'|add:device|add:'/responsiveslides.min.js' %}"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+          // Slideshow 1
+          $("#slider1").responsiveSlides({
+            maxwidth: 2500,
+            speed: 600
+          }).css('height', '250px');
+      });
+    </script>
+{% endblock %}
+
+{% block slider %}
+    {% include 'slider.html' %}
+{% endblock %}
