@@ -5,6 +5,8 @@ from django.contrib import admin
 from content.models import Page
 
 import os
+
+admin.site.index_template = 'admin/my_custom_index.html'
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -13,6 +15,7 @@ urlpatterns = patterns('',
     url(r'^render/section/(?P<section_id>\d+)?$', 'content.views.render_preview_section', name='render_preview_section'),
     url(r'^render/page/(?P<page_id>\d+)?$', 'content.views.render_preview_page', name='render_preview_page'),
     # url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^admin/server-action', 'content.views.server_action', name='server_action'),
     url(r'^admin/', include(admin.site.urls))
 ) + static(settings.STATIC_URL)
 

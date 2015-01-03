@@ -1,0 +1,72 @@
+{% extends "admin/index.html" %}
+
+{% block extrahead %}
+    {{ block.super }}
+    {% load staticfiles %}
+    <script type="text/javascript" src="{% static "admin/js/jquery.min.js" %}"></script>
+{% endblock %}
+
+{% block sidebar %}
+{{ block.super }}
+<div id="content-main">
+    <div class="module" id="recent-actions-module">
+        <form enctype="multipart/form-data" action="" method="post" id="server_action" novalidate="">{% csrf_token %}
+            <input type="hidden" value="" name="action" id="form_action">
+            <input type="file" name="sql_dump_file" id="sql_dump_file">
+            <input type="submit" value="Git Pull" class="default" name="git_pull">
+            <input type="submit" value="Restart Nginx" class="default" name="restart_nginx">
+            <input type="submit" value="Apply Dump" class="default" name="apply_dump">
+        </form>
+    </div>
+    <div class="module" id="recent-actions-module">
+        <p id="server_action_message" style="color: #008000"></p>
+    </div>
+</div>
+
+<script type="text/javascript">
+/**
+ * Created by ggarrido on 2/01/15.
+ */
+(function($) {
+    $('#server_action input[type=submit]').click(function(event) {
+        var form = $(this).closest('form');
+        var action = $(event.target).attr('name');
+        if(action == 'apply_dump' && $('#sql_dump_file')[0].files[0] == undefined)
+        {
+            $('#sql_dump_file').css('border', '1px solid red');
+            $('#server_action_message').html('Missing dump file');
+            event.preventDefault();
+        }
+        else
+        {
+            $('#sql_dump_file').css('border', 'none');
+             $('#server_action_message').html('');
+            $('#form_action', $(form)).val(action);
+        }
+    });
+
+    $('#server_action').submit(function(event) {
+        var form = $(this);
+        var form_data = new FormData ();
+        form_data.append('sql_dump_file', $('#sql_dump_file')[0].files[0]);
+        form_data.append('action', $('#form_action').val());
+
+        $.ajax({
+            type: form.attr('method'),
+            url: '/admin/server-action',
+            contentType: false,
+            processData: false,
+            cache: false,
+            data: form_data
+        }).done(function(response, status) {
+            $('input[name="action"]', $(form)).val('');
+            $('#server_action_message').html(response);
+        }).fail(function() {
+             $('input[name="action"]', $(form)).val('');
+        });
+        event.preventDefault();
+    });
+})(jQuery);
+
+</script>
+{% endblock %}

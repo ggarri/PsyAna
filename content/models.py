@@ -72,6 +72,7 @@ class Page(models.Model):
     TEMPLATES = (
         (1, 'base/base_simple.html'),
         (2, 'base/base_slider.html'),
+        (3, 'base/base_maps.html'),
     )
 
     ROBOT_TAGS = (

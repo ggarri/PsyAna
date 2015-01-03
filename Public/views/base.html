@@ -5,11 +5,15 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html lang="es-ES">
 	<head>
 		{% load staticfiles %}
-		{% include 'css.html' %}
-		{% include 'js.html' %}
+        {% block extrastyle %}
+			{% include 'css.html' %}
+        {% endblock %}
+    	{% block extrahead %}
+			{% include 'js.html' %}
+		{% endblock %}
 
         <meta charset="UTF-8">
         <meta name="author" content="Gabriel Garrido">
@@ -20,26 +24,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</head>
 	<body>
 		<!---start-wrap---->
-		
+
 		<!---start-header---->
         <div class="header">
 			{% include 'header.html' %}
 		</div>
 		<!---End-header---->
 
-        {% if isSlider %}
-			<!---start-images-slider---->
-			{% include 'slider.html' %}
-			<!---End-images-slider---->
-        {% endif %}
+        {% block slider %}
+        {% endblock %}
 
 		<!----start-content----->
 		<div class="content {{ page.css_class }}">
         	<div class="wrap">
 			{% block content %}
-                {% for section in page.sections.all %}
-					{% include section.get_html_skeleton with section=section only %}
-				{% endfor %}
 			{% endblock %}
             </div>
         	<div class="clear"></div>
