@@ -72,7 +72,7 @@ def server_action(request):
     elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:
         handle_uploaded_file(request.FILES['sql_dump_file'])
         database_params = settings.DATABASES['default']
-        cmd = 'mysql -u%s -p%s %s2 < %s' % (database_params['USER'], database_params['PASSWORD'],
+        cmd = 'mysql -u%s -p%s %s < %s' % (database_params['USER'], database_params['PASSWORD'],
                                            database_params['NAME'], settings.PENDING_PSYANA_DUMPFILE)
     else:
         return HttpResponse(content='Action selected not valid', status=403)
