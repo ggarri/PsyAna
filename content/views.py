@@ -66,13 +66,13 @@ def server_action(request):
     action = request.POST['action']
 
     if action == 'git_pull':
-        cmd = 'cd %s && git pull origin dev' % settings.BASE_DIR
+        cmd = 'cd %s && git pull origin master' % settings.BASE_DIR
     elif action == 'restart_nginx':
-        cmd = 'service nginx restart'
+        cmd = '/etc/init.d/uwsgi_psyana restart'
     elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:
         handle_uploaded_file(request.FILES['sql_dump_file'])
         database_params = settings.DATABASES['default']
-        cmd = 'mysql -u%s -p%s %s2 < %s' % (database_params['USER'], database_params['PASSWORD'],
+        cmd = 'mysql -u%s -p%s %s < %s' % (database_params['USER'], database_params['PASSWORD'],
                                            database_params['NAME'], settings.PENDING_PSYANA_DUMPFILE)
     else:
         return HttpResponse(content='Action selected not valid', status=403)
