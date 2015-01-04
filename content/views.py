@@ -79,7 +79,7 @@ def server_action(request):
 
     output = run_command(cmd)
     if not output:
-        output = 'Succesed'
+        output = 'Succesed2'
     return HttpResponse(output)
 
 
