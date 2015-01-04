@@ -7,7 +7,7 @@ class UserProfile(AbstractUser):
     address = models.CharField(max_length=1000, blank=True)
     birthday = models.DateField(default=None, blank=True, null=True)
     photos = models.ManyToManyField('content.Photo', blank=True, related_name='user_photos')
-    profile_photo = models.OneToOneField('content.Photo', null=True, related_name='profile_photo')
+    profile_photo = models.OneToOneField('content.Photo', null=True, null=True, related_name='profile_photo')
     # description = tinymce_models.HTMLField()
 
     def __unicode__(self):
