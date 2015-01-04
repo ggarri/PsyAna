@@ -759,11 +759,11 @@ body{
 	padding:1.5%;
 }
 .span_1_of_3 {
-	width: 32%;
+	width: 31%;
 	padding:1.5%;
 }
 .span_1_of_1 {
-	width: 99%;
+	width: 100%;
 	padding:1.5%;
 	text-align: center;
 }
@@ -1027,9 +1027,23 @@ body{
 	}
 }
 
-.contact #map-canvas {
+/* Mine */
+.content .col h3 {
+	min-height: 34px;
+}
+
+.contact .wrap  {
+	padding: 0%;
 	width: 100%;
-	min-height: 300px;
-	margin: 0px;
-	padding: 0px
+}
+.contact .google-map{
+	padding: 0px;
+	margin-top: -30px;
+}
+.contact .google-map h3{
+	min-height: 0px !important;
+}
+
+.contact .span_1_of_3, .contact .span_1_of_2, .contact .span_1_of_1, .contact .span_2_of_3 {
+	padding-top: 0px;
 }
