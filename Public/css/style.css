@@ -1,6 +1,10 @@
-.contact #map-canvas {
+#map-canvas {
 	width: 100%;
 	min-height: 400px;
 	margin: 0px;
 	padding: 0px
+}
+
+#map-canvas img {
+	max-width: none;
 }

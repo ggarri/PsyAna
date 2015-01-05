@@ -32,7 +32,7 @@ body{
 /*---start-header----*/
 .top-header{
 	background:#FFF;
-	padding:1em 0;	
+	padding:0em 0;
 }
 .top-header-left{
 	float:left;
@@ -1025,25 +1025,4 @@ body{
 	.top-nav li a {
 		padding: 1em 2.4em;
 	}
-}
-
-/* Mine */
-.content .col h3 {
-	min-height: 34px;
-}
-
-.contact .wrap  {
-	padding: 0%;
-	width: 100%;
-}
-.contact .google-map{
-	padding: 0px;
-	margin-top: -30px;
-}
-.contact .google-map h3{
-	min-height: 0px !important;
-}
-
-.contact .span_1_of_3, .contact .span_1_of_2, .contact .span_1_of_1, .contact .span_2_of_3 {
-	padding-top: 0px;
 }

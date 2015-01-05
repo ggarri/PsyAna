@@ -16,11 +16,9 @@ class UserProfile(AbstractUser):
 
 class Office(models.Model):
     title = models.CharField(max_length=100, default='NO TITLE')
-    phone = models.CharField(max_length=20, blank=True)
-    address = models.CharField(max_length=1000, blank=True)
-    photos = models.ManyToManyField('content.Photo', blank=True, related_name='office_photos')
     logo = models.OneToOneField('content.Photo', null=True, blank=True, related_name='office_logo')
-    worker = models.ManyToManyField(UserProfile, blank=True, verbose_name="Psichology")
+    workers = models.ManyToManyField(UserProfile, blank=True, verbose_name="Psichology", related_name='offices')
+    director = models.ForeignKey(UserProfile, null=False, related_name='director_of')
 
     def __unicode__(self):
         return u'%s' % self.title
