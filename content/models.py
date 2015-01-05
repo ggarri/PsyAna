@@ -56,6 +56,7 @@ class Website(models.Model):
     name = models.CharField(max_length=100, blank=False)
     url = models.CharField(max_length=250)
     office = models.ForeignKey(Office)
+    photos = models.ManyToManyField(Photo, blank=True, related_name='website')
     title = models.CharField(max_length=70, blank=False)
     description = models.TextField(null=True, blank=True)
     # Max 20 Keywords under

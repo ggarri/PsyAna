@@ -3,7 +3,7 @@
     <!-- Slideshow 1 -->
     <ul class="rslides rslides1" id="slider1" style="max-width: 2500px;">
     {% if office %}
-        {% for photo in office.photos.all %}
+        {% for photo in website.photos.all %}
         <li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; -webkit-transition: opacity 600ms ease-in-out; transition: opacity 600ms ease-in-out;">
             <img src="{{ photo.image.url }}" alt="{{ photo.alt }}">
             <div class="slider-info">

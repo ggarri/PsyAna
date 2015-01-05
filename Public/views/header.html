@@ -4,7 +4,7 @@
     <div class="wrap">
         <div class="top-header-left">
             {% if office %}
-                 <p>{{ office.title }}</p>
+                 <p>{{ office.director.first_name }} {{ office.director.last_name }}</p>
             {% endif %}
         </div>
         <div class="clear"> </div>

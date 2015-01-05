@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='office',
             name='director',
-            field=models.ForeignKey(related_name='director_of', blank=True, to=settings.AUTH_USER_MODEL, null=True),
+            field=models.ForeignKey(related_name='director_of', blank=True, to=settings.AUTH_USER_MODEL),
             preserve_default=True,
         ),
         migrations.AddField(
