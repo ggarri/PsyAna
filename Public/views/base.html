@@ -8,12 +8,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="es-ES" ng-app="myApp">
 	<head>
 		{% load staticfiles %}
-        {% block extrastyle %}
-			{% include 'css.html' %}
-        {% endblock %}
     	{% block extrahead %}
 			{% include 'js.html' %}
 		{% endblock %}
+        {% block extrastyle %}
+			{% include 'css.html' %}
+        {% endblock %}
+
 
         <meta charset="UTF-8">
         <meta name="author" content="Gabriel Garrido">
@@ -36,9 +37,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<!----start-content----->
 		<div class="content {{ page.css_class }}">
-			{% verbatim %}
-				{{ home.test }}
-			{% endverbatim %}
         	<div class="wrap">
 			{% block content %}
 			{% endblock %}

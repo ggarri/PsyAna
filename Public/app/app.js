@@ -8,11 +8,15 @@
  */
 
 (function(){
-    var myApp = angular.module('myApp', []);
+    var myApp = angular.module('myApp', ['ngUnderscore']);
 
-    myApp.controller('HomeCtrl', ['$scope', function($scope) {
-        this.test = 'Angular';
-        $scope.test = 'Angular2';
+    myApp.controller('ContactController', ['$http', function($http) {
+        $http.defaults.headers.post['Content-Type']  = 'application/json'
+        $http.defaults.headers.common['Accept'] = 'application/json';
+
+        this.sendForm = function(formRequest) {
+            $http.post('management/client/contactform', formRequest);
+        }
     }]);
 
 //myApp.config(['$routeProvider', function($routeProvider) {

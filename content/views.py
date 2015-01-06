@@ -3,6 +3,7 @@ from django.http.response import HttpResponseNotFound, HttpResponse
 from django.shortcuts import render_to_response, redirect
 from django.template.context import RequestContext
 from django.views.decorators.csrf import csrf_exempt
+from content.forms import SectionForm
 from content.models import Page, Section, Website
 from django.conf import settings
 import subprocess
@@ -21,8 +22,7 @@ def render_preview_section(request, section_id):
     device = 'mobile' if request.is_mobile else 'web'
     section = Section.objects.get(pk=section_id) if section_id != '0' else None
     if request.is_ajax():
-        section_form_set = modelformset_factory(Section)
-        formset = section_form_set(request.POST)
+        formset = SectionForm(request.POST)
         if formset.is_valid():
             sections = formset.save(commit=False)
             section = sections[0] if len(sections) > 0 else section
@@ -31,24 +31,6 @@ def render_preview_section(request, section_id):
                               context_instance=RequestContext(request))
 
 
-@csrf_exempt
-def render_preview_page(request, page_id):
-    device = 'mobile' if request.is_mobile else 'web'
-    page = Page.objects.get(pk=page_id) if page_id != '0' else None
-    if request.is_ajax():
-        page_form_set = modelformset_factory(Page)
-        formset = page_form_set(request.POST)
-        if formset.is_valid():
-            pages = formset.save(commit=False)
-            page = pages[0] if len(pages) > 0 else page
-
-    return render_to_response('base/template_preview.html', {
-        'sections': page.sections.all(),
-        'device': device
-    }, context_instance=RequestContext(request))
-
-
-@csrf_exempt
 def server_action(request):
     def handle_uploaded_file(f):
         with open(settings.PENDING_PSYANA_DUMPFILE, 'wb+') as destination:

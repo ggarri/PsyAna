@@ -1,5 +1,5 @@
 from django.forms.formsets import BaseFormSet
-from django.forms.models import BaseInlineFormSet
+from django.forms.models import BaseInlineFormSet, ModelForm
 from content.models import Section, Page
 
 
@@ -14,12 +14,10 @@ class PageFormSet(BaseFormSet):
         prefix = ''
 
 
-class SectionFormSet(BaseFormSet):
-    model = Section
-    prefix = 'sections'
-
+class SectionForm(ModelForm):
     class Meta:
         model = Section
+        fields = ['template', 'skeleton', 'title', 'subtitle', 'text', 'head_photo', 'css_class']
         prefix = 'sections'
 
 
