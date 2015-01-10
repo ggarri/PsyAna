@@ -11,11 +11,10 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'content.views.home', name='home'),
-    url(r'^test$', 'content.views.test', name='test'),
-    url(r'^render/section/(?P<section_id>\d+)?$', 'content.views.render_preview_section', name='render_preview_section'),
-    url(r'^render/page/(?P<page_id>\d+)?$', 'content.views.render_preview_page', name='render_preview_page'),
-    # url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^management/client/contactform?$', 'management.views.client_contact_form', name='client_contact_form'),
+
     url(r'^admin/server-action', 'content.views.server_action', name='server_action'),
+    url(r'^render/section/(?P<section_id>\d+)?$', 'content.views.render_preview_section', name='render_preview_section'),
     url(r'^admin/', include(admin.site.urls))
 ) + static(settings.STATIC_URL)
 

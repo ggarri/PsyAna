@@ -2,5 +2,8 @@
 
 {% block extrahead %}
     {{ block.super }}
+    {% load staticfiles %}
+    <script src="{% static 'js/base_maps.js' %}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyqLkZJss0026KcUvA6xOu-_1Bxouq4Qo&v=3.exp&signed_in=true"></script>
+
 {% endblock %}
