@@ -14,7 +14,7 @@ def client_contact_form(request):
     body_data = json.loads(request.body)
     website = Website.objects.get(name=settings.WEBSITE_NAME)
     recipients = [website.office.director.email]
-    recipients = ['ggarri@gmail.com']
+    # recipients = ['ggarri@gmail.com']
 
     send_mail('PsyAna : %s' % body_data['fullname'], body_data['comment'], body_data['email'], recipients)
     return HttpResponse()
