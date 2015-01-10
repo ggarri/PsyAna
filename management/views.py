@@ -16,5 +16,5 @@ def client_contact_form(request):
     recipients = [website.office.director.email]
     recipients = ['ggarri@gmail.com']
 
-    send_mail('PsyAna : %s' % body_data['fullname'], body_data['request'], body_data['email'], recipients)
+    send_mail('PsyAna : %s' % body_data['fullname'], body_data['comment'], body_data['email'], recipients)
     return HttpResponse()
