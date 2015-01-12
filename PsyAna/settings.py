@@ -24,7 +24,11 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    ".ggarri.com",
+    ".anahidalgopsicologa.es",
+    ".anahidalgopsicologaonline.es",
+]
 
 
     # Application definition
