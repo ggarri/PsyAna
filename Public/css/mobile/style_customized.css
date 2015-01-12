@@ -2,3 +2,22 @@
     width: 90% !important;
 }
 
+.logo img{
+    height: 15em;
+}
+
+.col p {
+    font-size: 1.1em;
+}
+
+.span_1_of_1 h3 {
+    text-align: center;
+}
+
+.span_1_of_1 img{
+    max-height: 50em;
+}
+.content{
+    padding-bottom: 7em;
+}
+

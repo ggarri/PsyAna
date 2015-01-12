@@ -6,9 +6,8 @@ class UserProfile(AbstractUser):
     phone = models.CharField(max_length=20, blank=True)
     address = models.CharField(max_length=1000, blank=True)
     birthday = models.DateField(default=None, blank=True, null=True)
-    photos = models.ManyToManyField('content.Photo', blank=True, related_name='user_photos')
     profile_photo = models.OneToOneField('content.Photo', null=True, blank=True, related_name='profile_photo')
-    # description = tinymce_models.HTMLField()
+    description = models.TextField(blank=True, default='')
 
     def __unicode__(self):
         return u'%s (%s %s)' % (self.username, self.first_name, self.last_name)

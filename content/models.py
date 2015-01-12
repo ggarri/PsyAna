@@ -122,6 +122,7 @@ class Section(models.Model):
         (3, 'section/template/template_title_subtitle.html'),
         (4, 'section/template/template_title_subtitle_image.html'),
         (5, 'section/template/contact.html'),
+        (6, 'section/template/who_we_are.html'),
     )
 
     page = models.ForeignKey(Page, related_name='sections')

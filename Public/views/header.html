@@ -18,9 +18,8 @@
         </div>
         <div class="social-links">
             <ul>
-                <li><a href="#"><img src="{% static 'images/web/facebook.png' %}" title="facebook" /></a></li>
-                <li><a href="#"><img src="{% static 'images/web/twitter.png' %}" title="twitter" /></a></li>
-                <li><a href="#"><img src="{% static 'images/web/feed.png' %}" title="Rss" /></a></li>
+                <li><a href="#"><img src="{% static 'images/'|add:device|add:'/facebook.png' %}" title="facebook" /></a></li>
+                <li><a href="#"><img src="{% static 'images/'|add:device|add:'/google+.png' %}" title="google+" /></a></li>
                 <div class="clear"> </div>
             </ul>
         </div>

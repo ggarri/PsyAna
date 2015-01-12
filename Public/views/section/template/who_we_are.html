@@ -1,0 +1,16 @@
+<div class="{{ section.css_class }}">
+    <h3>{{ section.title }}</h3>
+    {% if office %}
+        {% for worker in office.workers.all %}
+            {% if worker.profile_photo %}
+                {% load staticfiles %}
+                <img src="{{ worker.profile_photo.image.url }}" alt="{{ worker.profile_phone.alt }}"
+                     title="{{ worker.profile_phone.title }}">
+            {% endif %}
+            <h4>{{ worker.first_name }} {{ worker.last_name }}</h4>
+            {% autoescape off %}
+                <p>{{ worker.description }}</p>
+            {% endautoescape %}
+        {% endfor %}
+    {% endif %}
+</div>
