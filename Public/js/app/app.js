@@ -8,7 +8,7 @@
  */
 
 (function(){
-    var myApp = angular.module('myApp', ['ngUnderscore']);
+    var myApp = angular.module('myApp', []);
 
     myApp.controller('ContactController', ['$scope', '$http', function($scope, $http) {
         $http.defaults.headers.post['Content-Type']  = 'application/json'
