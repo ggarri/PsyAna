@@ -1,13 +1,11 @@
 from django.forms.models import modelformset_factory
-from django.http.response import HttpResponseNotFound, HttpResponse
-from django.shortcuts import render_to_response, redirect
+from django.http.response import HttpResponseNotFound
+from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from content.forms import SectionForm
 from content.models import Page, Section, Website
 from django.conf import settings
-import subprocess
-import commands
 
 
 def home(request):
@@ -29,40 +27,6 @@ def render_preview_section(request, section_id):
 
     return render_to_response('section/template/template_preview.html', {'section': section, 'isPreview': True, 'device': device},
                               context_instance=RequestContext(request))
-
-
-def server_action(request):
-    def handle_uploaded_file(f):
-        with open(settings.PENDING_PSYANA_DUMPFILE, 'wb+') as destination:
-            for chunk in f.chunks():
-                destination.write(chunk)
-
-    def run_command(exec_line):
-        return commands.getoutput(exec_line)
-
-    if not request.user.is_authenticated():
-        return redirect('/admin/login/?next=%s' % request.path)
-    if request.method != 'POST' or 'action' not in request.POST:
-        return HttpResponse(content='Wrong Request Format', status=403)
-
-    action = request.POST['action']
-
-    if action == 'git_pull':
-        cmd = 'cd %s && git pull origin master' % settings.BASE_DIR
-    elif action == 'restart_nginx':
-        cmd = '/etc/init.d/uwsgi_psyana restart'
-    elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:
-        handle_uploaded_file(request.FILES['sql_dump_file'])
-        database_params = settings.DATABASES['default']
-        cmd = 'mysql -u%s -p%s %s < %s' % (database_params['USER'], database_params['PASSWORD'],
-                                           database_params['NAME'], settings.PENDING_PSYANA_DUMPFILE)
-    else:
-        return HttpResponse(content='Action selected not valid', status=403)
-
-    output = run_command(cmd)
-    if not output:
-        output = 'Succesed'
-    return HttpResponse(output)
 
 
 def test(request):
