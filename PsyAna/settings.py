@@ -20,14 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'te=bcpumq+7b8k9i+l1)q)-sqa65vf$y95gcakfdi^g-q!5$6w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = [
     ".ggarri.com",
     ".anahidalgopsicologa.es",
     ".anahidalgopsicologaonline.es",
+    ".127.0.0.1"
 ]
 
 
@@ -99,7 +99,7 @@ TEMPLATE_DIRS = (
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/Public/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'Public/')
+# STATIC_ROOT = '/var/www/psyana/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'Public'),
