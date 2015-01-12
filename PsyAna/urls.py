@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^$', 'content.views.home', name='home'),
     url(r'^management/client/contactform?$', 'management.views.client_contact_form', name='client_contact_form'),
 
-    url(r'^admin/server-action', 'content.views.server_action', name='server_action'),
+    url(r'^admin/server-action', 'management.views.server_action', name='server_action'),
     url(r'^render/section/(?P<section_id>\d+)?$', 'content.views.render_preview_section', name='render_preview_section'),
     url(r'^admin/', include(admin.site.urls))
 ) + static(settings.STATIC_URL)
