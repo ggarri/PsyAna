@@ -6,6 +6,10 @@
     height: 15em;
 }
 
+.col {
+    padding-top: 3em;
+}
+
 .col p {
     font-size: 1.1em;
 }
@@ -17,7 +21,14 @@
 .span_1_of_1 img{
     max-height: 50em;
 }
+
 .content{
     padding-bottom: 7em;
+}
+
+#workshop .col img{
+	height: 40em;
+    margin-left: auto;
+    margin-right: auto;
 }
 

@@ -2,21 +2,42 @@
 	min-height: 34px;
 }
 
-/* BASE_CONTACT_TEMPLATE */
-
-.contact .wrap  {
-	padding: 0%;
-	width: 100%;
+#slider1{
+	height: 25em;
 }
 
-.contact .google-map{
+#workshop .span_1_of_1 p {
+	width: 80%;
+	/*display: block;*/
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#workshop .col img{
+	height: 40em;
+}
+
+/* BASE_CONTACT_TEMPLATE */
+
+#contact .wrap  {
+	padding: 0%;
+	width: 100% !important;
+}
+
+#map-canvas {
+	max-width: 2500px;
+	height: 30em;
+}
+
+#google-map{
 	padding: 0px;
 	margin-top: -10px;
 }
-.contact .google-map h3{
+
+#google-map h3{
 	min-height: 0px !important;
 }
 
-.contact .span_1_of_3, .contact .span_1_of_2, .contact .span_1_of_1, .contact .span_2_of_3 {
+#contact .span_1_of_3, #contact .span_1_of_2, #contact .span_1_of_1, #contact .span_2_of_3 {
 	padding-top: 0px;
 }

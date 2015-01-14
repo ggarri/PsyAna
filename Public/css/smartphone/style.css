@@ -642,7 +642,7 @@ body{
 .group {
     zoom:1;
 }
-.contact {
+#contact {
 	padding: 10px;
 }
 .span_2_of_3  h3,
@@ -654,14 +654,14 @@ body{
 	padding: 0px 0px 4px 0px;
 	text-transform: uppercase;
 }
-.contact-form{
+#contact-form{
 	position:relative;
 	padding-bottom:30px;
 }
-.contact-form div{
+#contact-form div{
 	padding:5px 0;
 }
-.contact-form span{
+#contact-form span{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.875em;
@@ -671,7 +671,7 @@ body{
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
 }
-.contact-form input[type="text"],.contact-form textarea{
+#contact-form input[type="text"],#contact-form textarea{
 		    padding: 6px;
 			display: block;
 			width: 96%;
@@ -682,11 +682,11 @@ body{
 			color: #777;
 			-webkit-appearance: none;
 }
-.contact-form textarea{
+#contact-form textarea{
 		resize:none;
 		height:120px;		
 }
-.contact-form input[type="submit"]{
+#contact-form input[type="submit"]{
 	font-family: 'Open Sans', sans-serif;
 	color: #007DAD;
 	text-transform: uppercase;
@@ -701,11 +701,11 @@ body{
 	border:none;
 	font-size:1em;
 }
-.contact-form input[type="submit"]:hover{
+#contact-form input[type="submit"]:hover{
 	color: #303030;
 	background: url(../../views/smartphone/images/marker1.png) no-repeat 0;
 }
-.contact-form input[type="submit"]:active{
+#contact-form input[type="submit"]:active{
 	color: #303030;
 	background: url(../../views/smartphone/images/marker1.png) no-repeat 0;
 }
@@ -887,7 +887,7 @@ nav a#pull:after {
 /*----nav----*/
 
 /* Mine */
-.contact .span_1_of_3 {
+#contact .span_1_of_3 {
 	width: 29%;
 	display: inline-block;
 }
