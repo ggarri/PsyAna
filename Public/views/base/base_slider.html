@@ -4,16 +4,18 @@
     {{ block.super }}
     {% load staticfiles %}
     <script src="{% static 'js/'|add:device|add:'/responsiveslides.min.js' %}"></script>
-    <script>
-      // You can also use "$(window).load(function() {"
-      $(function () {
-          // Slideshow 1
-          $("#slider1").responsiveSlides({
-            maxwidth: 2500,
-            speed: 2000
-          }).css('height', '300px');
-      });
-    </script>
+    {% if device != 'mobile' %}
+        <script>
+          // You can also use "$(window).load(function() {"
+          $(function () {
+              // Slideshow 1
+              $("#slider1").responsiveSlides({
+                maxwidth: 2500,
+                speed: 2000
+              });
+          });
+        </script>
+    {% endif %}
 {% endblock %}
 
 {% block slider %}

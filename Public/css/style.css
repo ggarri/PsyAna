@@ -1,29 +1,33 @@
 
+.col p {
+	text-align: justify;
+}
+
 /***************/
 /* CONTACT TAB*/
 /***************/
 
-.contact .google-map{
+#contact #google-map{
 	width: 100%;
 	padding: 0px;
 }
 
-.contact .google-map #map-canvas {
+#contact #google-map #map-canvas {
 	width: 100%;
 	min-height: 400px;
 	margin: 0px;
 	padding: 0px
 }
 
-.contact .google-map #map-canvas img {
+#contact #google-map #map-canvas img {
 	max-width: none;
 }
 
-.contact form#contactForm textarea  {
+#contact form#contactForm textarea  {
 	width: 100%;
 }
 
-.contact form#contactForm button[type=submit] {
+#contact form#contactForm button[type=submit] {
 	width: 30em;
 }
 
