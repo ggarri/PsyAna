@@ -26,9 +26,24 @@
     padding-bottom: 7em;
 }
 
-#workshop .col img{
-	height: 40em;
-    margin-left: auto;
-    margin-right: auto;
+#google-map {
+    margin:0;
+    padding: 0;
+    border: 0;
+    width: 100%;
 }
 
+#map-canvas {
+	height: 30em;
+}
+
+#workshop .col img{
+    height: 50em;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#workshop .col p{
+    font-size: 1.2em;
+}

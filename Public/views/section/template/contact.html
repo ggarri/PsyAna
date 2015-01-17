@@ -7,7 +7,7 @@
         <p>{{ section.text }}</p>
     {% endautoescape %}
 
-    <div class="span_1_of_3">
+    <div class="span_1_of_3 contact-details">
         <h3>Donde encontrarme</h3>
         <div class='col span_1_of_1'>
             <h4> Dirección</h4>
@@ -15,13 +15,13 @@
             {{ office.director.address }}
         </div>
 
-        <div class='span_1_of_3'>
+        <div class='span_1_of_3 phone'>
             <h4> Teléfono</h4>
             <div class='clear'></div>
             {{ office.director.phone }}
         </div>
 
-        <div class='span_2_of_3'>
+        <div class='span_2_of_3 email'>
             <h4> Email</h4>
             <div class='clear'></div>
             {{ office.director.email }}
