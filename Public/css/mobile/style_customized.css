@@ -47,3 +47,7 @@
 #workshop .col p{
     font-size: 1.2em;
 }
+
+#workshop .span_1_of_1 p {
+	width: 95%;
+}

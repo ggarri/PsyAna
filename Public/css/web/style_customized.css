@@ -10,6 +10,10 @@
 	height: 40em;
 }
 
+#workshop .span_1_of_1 p {
+	width: 80%;
+}
+
 /* BASE_CONTACT_TEMPLATE */
 
 #map-canvas {
