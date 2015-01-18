@@ -18,8 +18,12 @@
         </div>
         <div class="social-links">
             <ul>
-                <li><a href="#"><img src="{% static 'images/'|add:device|add:'/facebook.png' %}" title="facebook" /></a></li>
-                <li><a href="#"><img src="{% static 'images/'|add:device|add:'/google+.png' %}" title="google+" /></a></li>
+                {% if office.director.sn_facebook %}
+                     <li><a href="{{ office.director.sn_facebook }}" target="_blank"><img src="{% static 'images/'|add:device|add:'/facebook.png' %}" title="facebook" /></a></li>
+                {% endif %}
+                {% if office.director.sn_google %}
+                    <li><a href="{{ office.director.sn_google }}" target="_blank"><img src="{% static 'images/'|add:device|add:'/google+.png' %}" title="google+" /></a></li>
+                {% endif %}
                 <div class="clear"> </div>
             </ul>
         </div>

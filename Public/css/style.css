@@ -3,6 +3,15 @@
 	text-align: justify;
 }
 
+.col img{
+	margin-left: 0px;
+}
+
+.span_2_of_3 img{
+	max-height: 30em;
+	width: 100%;
+}
+
 /***************/
 /* WORKSHOP    */
 /***************/
@@ -45,6 +54,10 @@
 #contact .wrap  {
 	padding: 0%;
 	width: 100% !important;
+}
+
+#modal-info .modal-content p{
+	padding-left: 2em;
 }
 
 /***************/

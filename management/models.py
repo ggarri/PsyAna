@@ -8,6 +8,8 @@ class UserProfile(AbstractUser):
     birthday = models.DateField(default=None, blank=True, null=True)
     profile_photo = models.OneToOneField('content.Photo', null=True, blank=True, related_name='profile_photo')
     description = models.TextField(blank=True, default='')
+    sn_google = models.CharField(max_length=1000, blank=True, null=True)
+    sn_facebook = models.CharField(max_length=1000, blank=True, null=True)
 
     def __unicode__(self):
         return u'%s (%s %s)' % (self.username, self.first_name, self.last_name)

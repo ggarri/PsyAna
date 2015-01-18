@@ -12,24 +12,24 @@
         <div class='col span_1_of_1'>
             <h4> Dirección</h4>
             <div class='clear'></div>
-            {{ office.director.address }}
+            <p>{{ office.director.address }}</p>
         </div>
 
         <div class='span_1_of_3 phone'>
             <h4> Teléfono</h4>
             <div class='clear'></div>
-            {{ office.director.phone }}
+            <p>{{ office.director.phone }}</p>
         </div>
 
         <div class='span_2_of_3 email'>
             <h4> Email</h4>
             <div class='clear'></div>
-            {{ office.director.email }}
+            <p>{{ office.director.email }}</p>
         </div>
     </div>
 
     {% verbatim %}
-    <div class="col span_2_of_3" ng-controller="ContactController as contactCtrl">
+    <div class="col span_2_of_3 form" ng-controller="ContactController as contactCtrl">
         <h3>Formulario de Contacto</h3>
         <form id="contactForm" name='contactForm' ng-submit="contactForm.$valid && contactCtrl.sendForm(form)" novalidate>
             <div class="span_1_of_3">
