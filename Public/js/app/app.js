@@ -17,24 +17,15 @@
 
         this.sendForm = function(formRequest) {
             $http.post('management/client/contactform', formRequest).success(function(){
-                alert('Email ha sido enviado correctamente.');
+                $('.modal-content p', $('#modal-info')).html('Email ha sido enviado correctamente.');
+                $('#modal-info').modal('show');
                 $scope.form = angular.copy($scope.master);
                 $scope.contactForm.$setPristine();
-            }).fail(function(){
-                alert('Error: Asegure que su cuenta de email está escrita correctamente.');
+            }).error(function(){
+                $('.modal-content p', $('#modal-info')).html('Error: Asegure que su cuenta de email está escrita correctamente.');
+                $('#modal-info').modal('show');
             });
         }
     }]);
-
-//myApp.config(['$routeProvider', function($routeProvider) {
-//        $routeProvider
-//            .when('/', {
-//                controller: 'homeCtrl',
-//                templateUrl: 'profile/cv.html'
-//            })
-//            .otherwise({
-//                redirectTo: '/error404'
-//            })
-//}]);
 
 })();

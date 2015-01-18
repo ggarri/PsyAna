@@ -1,7 +1,7 @@
 <div >
     <h3>{{ section.title }}</h3>
-    <img src="{{ section.head_photo.image.url }}" alt="{{ section.head_photo.alt }}" title="{{ section.head_photo.title }}">
     {% autoescape off %}
         <p>{{ section.text }}</p>
     {% endautoescape %}
+    <img src="{{ section.head_photo.image.url }}" alt="{{ section.head_photo.alt }}" title="{{ section.head_photo.title }}">
 </div>

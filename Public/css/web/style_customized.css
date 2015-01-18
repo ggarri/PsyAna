@@ -2,21 +2,38 @@
 	min-height: 34px;
 }
 
-/* BASE_CONTACT_TEMPLATE */
-
-.contact .wrap  {
-	padding: 0%;
-	width: 100%;
+#slider1{
+	height: 25em;
 }
 
-.contact .google-map{
+#workshop .col img{
+	height: 40em;
+}
+
+#workshop .span_1_of_1 p {
+	width: 80%;
+}
+
+/* BASE_CONTACT_TEMPLATE */
+
+#map-canvas {
+	max-width: 2500px;
+	height: 30em;
+}
+
+#google-map{
 	padding: 0px;
 	margin-top: -10px;
 }
-.contact .google-map h3{
+
+#google-map h3{
 	min-height: 0px !important;
 }
 
-.contact .span_1_of_3, .contact .span_1_of_2, .contact .span_1_of_1, .contact .span_2_of_3 {
+#contact .span_1_of_3, #contact .span_1_of_2, #contact .span_1_of_1, #contact .span_2_of_3 {
 	padding-top: 0px;
+}
+
+#contact .contact-details .email, #contact .contact-details .phone{
+	padding: 0.5%;
 }

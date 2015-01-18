@@ -1,30 +1,63 @@
 
+.col p {
+	text-align: justify;
+}
+
+.col img{
+	margin-left: 0px;
+}
+
+.span_2_of_3 img{
+	max-height: 30em;
+	width: 100%;
+}
+
+/***************/
+/* WORKSHOP    */
+/***************/
+
+
+#workshop .span_1_of_1 p {
+	/*display: block;*/
+	margin-left: auto;
+    margin-right: auto;
+}
+
 /***************/
 /* CONTACT TAB*/
 /***************/
 
-.contact .google-map{
+#contact #google-map{
 	width: 100%;
 	padding: 0px;
 }
 
-.contact .google-map #map-canvas {
+#contact #google-map #map-canvas {
 	width: 100%;
 	min-height: 400px;
 	margin: 0px;
 	padding: 0px
 }
 
-.contact .google-map #map-canvas img {
+#contact #google-map #map-canvas img {
 	max-width: none;
 }
 
-.contact form#contactForm textarea  {
+#contact form#contactForm textarea  {
 	width: 100%;
 }
 
-.contact form#contactForm button[type=submit] {
+#contact form#contactForm button[type=submit] {
 	width: 30em;
+}
+
+#contact .wrap  {
+	padding: 0%;
+	width: 100% !important;
+}
+
+#modal-info .modal-content p{
+	padding-left: 2em;
 }
 
 /***************/
