@@ -7,9 +7,12 @@ from django.conf import settings
 import subprocess
 import commands
 from django.shortcuts import redirect
-
+from django.shortcuts import get_object_or_404, render
 # Create your views here.
 
+
+def certificate(request):
+    return render(request, 'certificates/googlefbb7059c456c58a6.html')
 
 @csrf_exempt
 def client_contact_form(request):
@@ -40,7 +43,7 @@ def server_action(request):
     action = request.POST['action']
 
     if action == 'git_pull':
-        cmd = 'cd %s && git pull origin master' % settings.BASE_DIR
+        cmd = 'cd %s && git reset --hard HEAD && git pull origin master' % settings.BASE_DIR
     elif action == 'restart_nginx':
         cmd = '/etc/init.d/uwsgi_psyana restart'
     elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:

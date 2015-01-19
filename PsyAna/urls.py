@@ -11,6 +11,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'content.views.home', name='home'),
+    url(r'^googlefbb7059c456c58a6\.html$', 'management.views.certificate', name='certificate'),
     url(r'^management/client/contactform?$', 'management.views.client_contact_form', name='client_contact_form'),
 
     url(r'^admin/server-action', 'management.views.server_action', name='server_action'),
