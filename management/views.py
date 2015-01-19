@@ -40,7 +40,7 @@ def server_action(request):
     action = request.POST['action']
 
     if action == 'git_pull':
-        cmd = 'cd %s && git pull origin master' % settings.BASE_DIR
+        cmd = 'cd %s && git reset --hard HEAD && git pull origin master' % settings.BASE_DIR
     elif action == 'restart_nginx':
         cmd = '/etc/init.d/uwsgi_psyana restart'
     elif action == 'apply_dump' and 'sql_dump_file' in request.FILES:
