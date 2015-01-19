@@ -24,10 +24,10 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = [
-    ".ggarri.com",
+    # ".ggarri.com",
     ".anahidalgopsicologa.es",
     ".anahidalgopsicologaonline.es",
-    ".127.0.0.1"
+    # ".127.0.0.1"
 ]
 
 
