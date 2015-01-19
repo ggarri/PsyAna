@@ -7,9 +7,12 @@ from django.conf import settings
 import subprocess
 import commands
 from django.shortcuts import redirect
-
+from django.shortcuts import get_object_or_404, render
 # Create your views here.
 
+
+def certificate(request):
+    return render(request, 'certificates/googlefbb7059c456c58a6.html')
 
 @csrf_exempt
 def client_contact_form(request):
