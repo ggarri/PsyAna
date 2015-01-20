@@ -26,7 +26,6 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = [
     # ".ggarri.com",
     ".anahidalgopsicologa.es",
-    "www.anahidalgopsicologa.es",
     # ".anahidalgopsicologaonline.es",
     # ".127.0.0.1"
 ]
