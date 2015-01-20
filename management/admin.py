@@ -5,7 +5,7 @@ from management.models import UserProfile, Office
 
 
 class ProfileAdmin(admin.ModelAdmin):
-    pass
+    exclude = ('user_permissions', 'last_login', 'date_joined', 'birthday')
     # ('Profile description',  {'fields': ['description'], 'widget': TinyMCE})
 
 
