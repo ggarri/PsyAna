@@ -9,6 +9,7 @@
 
 {% block sidebar %}
 {{ block.super }}
+{% if request.user.is_superuser %}
 <div id="content-main">
     <div class="module" id="recent-actions-module">
         <form enctype="multipart/form-data" action="" method="post" id="server_action" novalidate="">{% csrf_token %}
@@ -23,6 +24,7 @@
         <p id="server_action_message" style="color: #008000"></p>
     </div>
 </div>
+{% endif %}
 
 <script type="text/javascript">
 /**
