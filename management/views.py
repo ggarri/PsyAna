@@ -14,6 +14,7 @@ from django.shortcuts import get_object_or_404, render
 def certificate(request):
     return render(request, 'certificates/googlefbb7059c456c58a6.html')
 
+
 @csrf_exempt
 def client_contact_form(request):
     body_data = json.loads(request.body)

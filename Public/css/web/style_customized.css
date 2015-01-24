@@ -37,3 +37,11 @@
 #contact .contact-details .email, #contact .contact-details .phone{
 	padding: 0.5%;
 }
+
+#contact form#contactForm button[type=submit] {
+	width: 30em;
+}
+
+#contact #google-map #map-canvas {
+	min-height: 400px;
+}
