@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.query import QuerySet
 from django.utils.encoding import filepath_to_uri
 from management.models import Office
 from django.core.files.storage import FileSystemStorage
@@ -59,6 +60,7 @@ class Website(models.Model):
     photos = models.ManyToManyField(Photo, blank=True, related_name='website')
     title = models.CharField(max_length=70, blank=False)
     description = models.TextField(null=True, blank=True)
+
     # Max 20 Keywords under
     keywords = models.ManyToManyField(Keyword, blank=True)
 
@@ -101,6 +103,11 @@ class Page(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.title
+
+    @property
+    def get_absolute_url(self):
+        return self.path
+
 
     class Meta:
         unique_together = ( ('path'), )
