@@ -8,11 +8,24 @@ import subprocess
 import commands
 from django.shortcuts import redirect
 from django.shortcuts import get_object_or_404, render
+import xml.etree.cElementTree as ET
 # Create your views here.
 
 
-def certificate(request):
-    return render(request, 'certificates/googlefbb7059c456c58a6.html')
+def certificate(request, certificate_id):
+    return render(request, 'googleStuff/google'+certificate_id+'.html')
+
+
+def sitemap(request):
+    response = HttpResponse(content_type='text/xml')
+    response['Content-Disposition'] = 'attachment; filename="sitemap.xml"'
+
+    root = ET.Element("root")
+    doc = ET.SubElement(root, "doc")
+    ET.SubElement(doc, "field1", name="blah").text = "some value1"
+    ET.SubElement(doc, "field2", name="asdfasd").text = "some vlaue2"
+
+    return render(request, ET.tostringlist(root), {}, content_type="text/xml")
 
 
 @csrf_exempt
